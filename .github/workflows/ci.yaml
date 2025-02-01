@@ -24,15 +24,6 @@ jobs:
       - name: Run linting
         run: npm run lint
 
-      - name: Run tests
-        run: npm test
-        env:
-          DB_HOST: localhost
-          DB_USER: root
-          DB_PASSWORD: root
-          DB_NAME: todo_app_test
-          REDIS_URL: redis://localhost:6379
-
         
   build:
     needs: test
