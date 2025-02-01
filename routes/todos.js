@@ -5,7 +5,7 @@ const Redis = require('redis');
 
 // Create Redis client with proper error handling
 const client = Redis.createClient({
-    url: 'redis://localhost:6379'
+    url: 'redis://redisdb:6379'
 });
 
 // Connect to Redis
