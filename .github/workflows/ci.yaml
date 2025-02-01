@@ -69,6 +69,8 @@ jobs:
           echo "Updated image tag in $FILE_PATH to $IMAGE_TAG"
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           cd manifest
           git config user.name "Batyray"
