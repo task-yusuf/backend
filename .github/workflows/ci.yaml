@@ -74,7 +74,7 @@ jobs:
         run: |
           cd manifest
           git config user.name "Batyray"
-          git config user.email "Batyray@task.mail"
+          git config user.email "cansizyusuf29@gmail.com"
           git add ${{ github.event.repository.name }}.yaml
           git commit -m "Update image tag to ${{ github.run_id }}"
           git push origin main
