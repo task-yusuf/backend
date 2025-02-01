@@ -46,7 +46,7 @@ jobs:
           echo "🎯 Docker image built successfully!"
 
       - name: Push Docker image
-        run: docker push swr.tr-west-1.myhuaweicloud.com/task_organization/${{ github.event.repository.name }}:${{ github.run_id }} .
+        run: docker push swr.tr-west-1.myhuaweicloud.com/task_organization/${{ github.event.repository.name }}:${{ github.run_id }} 
 
 
     
